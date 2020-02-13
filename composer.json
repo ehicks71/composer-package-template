@@ -1,0 +1,21 @@
+{
+    "name": "hicksem/composer-package-template",
+    "description": "Composer Package Template repository",
+    "require": {
+        "php" : ">= 7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\Template\\": "src/"
+        }
+    },
+    "extra" : {
+        "branch-alias" : {
+            "master": "master",
+            "dev-master" : "dev"
+        }
+    }
+}
