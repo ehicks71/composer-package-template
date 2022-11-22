@@ -33,13 +33,15 @@ checks:
 plugins:
   phpcodesniffer:
     enabled: true
+    channel: beta
     config:
-      standard: "PSR1,PSR2"
+      standard: "PSR12"
 exclude_patterns:
   - "**/node_modules/"
   - "**/spec/"
   - "**/test/"
   - "**/tests/"
+  - "**/Test/"
   - "**/vendor/"
   - "**/classes/"
   - "**/config/"

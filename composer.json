@@ -2,10 +2,11 @@
     "name": "hicksem/composer-package-template",
     "description": "Composer Package Template repository",
     "require": {
-        "php" : ">= 7.0"
+        "php" : ">= 7.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "~5"
+        "phpunit/phpunit": "~9",
+        "phpunit/php-code-coverage": "~8"
     },
     "autoload": {
         "psr-4": {
