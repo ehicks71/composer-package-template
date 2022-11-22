@@ -1,8 +1,9 @@
 <?php
+
 namespace Example\Template\Tests;
 
-use \PHPUnit\Framework\TestCase;
-use \Example\Template\Example;
+use PHPUnit\Framework\TestCase;
+use Example\Template\Example;
 
 /**
  * Tests that the Example class works as expected.
@@ -10,7 +11,7 @@ use \Example\Template\Example;
  * @category Tests
  * @package Example\Template\Tests
  * @author Elizabeth Hicks <ehicks@asazi.biz>
- * @copyright 2020
+ * @copyright 2020-2022
  */
 class ExampleTest extends TestCase
 {
@@ -24,7 +25,7 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->oExample = new Example();
     }
@@ -37,7 +38,7 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testPassThruMethod()
+    public function testPassThruMethod(): void
     {
         $aTestParam = array(
             'test' => 'me',
@@ -51,7 +52,7 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->oExample = null;
         parent::tearDown();
